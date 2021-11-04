@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_global_navigation_panels",
+  "info": {
+    "name": "navigationPanel",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.navigation-section"
+    },
+    "pushes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.navigation-push"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}
