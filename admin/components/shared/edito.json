@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_editos",
+  "info": {
+    "name": "edito",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "purple",
+        "yellow"
+      ]
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    }
+  }
+}
