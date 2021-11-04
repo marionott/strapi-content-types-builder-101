@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_global_navigation_sections",
+  "info": {
+    "name": "navigationSection",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}
