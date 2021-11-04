@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "homepages",
   "info": {
-    "name": "homepage"
+    "name": "homepage",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,7 +15,8 @@
     "slices": {
       "type": "dynamiczone",
       "components": [
-        "slices.hero"
+        "slices.hero",
+        "slices.top-features"
       ]
     }
   }

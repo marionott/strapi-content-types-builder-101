@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_slices_top_features",
+  "info": {
+    "name": "topFeatures",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "collection": "feature"
+    },
+    "intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.edito"
+    }
+  }
+}
