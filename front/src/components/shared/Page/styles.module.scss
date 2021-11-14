@@ -1,0 +1,13 @@
+@import 'config.scss';
+
+.Page {
+  width: 100%;
+  min-height: 120vh;
+  position: relative;
+
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

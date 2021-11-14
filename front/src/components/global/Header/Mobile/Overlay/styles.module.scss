@@ -1,0 +1,91 @@
+@import 'config.scss';
+
+.Overlay {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  overflow: hidden;
+  padding: 16px 20px 20px 20px;
+  z-index: 200;
+  box-sizing: border-box;
+  visibility: hidden;
+  transform: translateZ(1000px);
+  height: 100vh;
+
+  &.visible {
+    visibility: visible;
+  }
+
+  @include breakpoint($md) {
+    display: none;
+  }
+}
+
+.container {
+  height: 100%;
+  position: relative;
+  padding: 21px 27px;
+  padding-right: 0px;
+  box-sizing: border-box;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  @include boxShadow();
+}
+
+.wrapper {
+  box-sizing: border-box;
+  max-height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.gradient {
+  pointer-events: none;
+  display: block;
+  left: 0px;
+  height: 27px;
+  left: 0;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+}
+.cross {
+  position: absolute;
+  right: 21px;
+  top: 27px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.title {
+  padding-bottom: 20px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.section {
+  &:not(:first-child) {
+    padding-top: 20px;
+  }
+
+  .link {
+    display: block;
+    padding-bottom: 10px;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

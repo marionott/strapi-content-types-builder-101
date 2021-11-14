@@ -1,0 +1,169 @@
+@import 'config.scss';
+
+.LabelTitleText {
+  width: 100%;
+
+  &.center {
+    text-align: center;
+    .label,
+    .title,
+    .text,
+    .link {
+      text-align: center;
+    }
+
+    .label,
+    .title,
+    .text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .text {
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .links {
+      justify-content: center;
+    }
+  }
+
+  &.small {
+    .title {
+      margin-bottom: 12px;
+    }
+
+    .text {
+      margin-bottom: 39px;
+    }
+  }
+
+  &.ctaBanner {
+    .title {
+      margin-bottom: 24px;
+    }
+
+    .text {
+      margin-bottom: 40px;
+    }
+  }
+
+  &.mobileCenter {
+    .label,
+    .title,
+    .text,
+    .link {
+      text-align: center;
+
+      @include breakpoint($md) {
+        text-align: left;
+      }
+    }
+
+    .links {
+      justify-content: center;
+
+      @include breakpoint($md) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.label,
+.title,
+.text {
+  text-align: left;
+  transform: translateZ(1000px);
+}
+
+.label {
+  margin-bottom: 40px;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.word,
+.button {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.titleContainer {
+  position: relative;
+}
+
+.text {
+  padding: 0 6px;
+  margin-bottom: 57px;
+
+  @include breakpoint($md) {
+    padding: 0;
+  }
+}
+
+.label,
+.title,
+.text,
+.links {
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+  flex-direction: column;
+
+  @include breakpoint($md) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .alignUnderButton {
+    flex-basis: 100%;
+    margin-top: 25px;
+
+    @include breakpoint($md) {
+      margin-top: 35px;
+    }
+
+    .smallTextWithLink {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
+
+.button {
+  width: 100%;
+
+  @include breakpoint($sm) {
+    width: auto;
+  }
+}
+
+.link {
+  margin: 0 auto 15px 0;
+  width: 100%;
+
+  @include breakpoint($md) {
+    width: auto;
+    margin-right: 35px;
+    margin-bottom: 0px;
+  }
+
+  &:last-child {
+    @include breakpoint($md) {
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}

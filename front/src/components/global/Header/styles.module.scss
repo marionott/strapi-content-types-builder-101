@@ -1,0 +1,20 @@
+@import 'config.scss';
+
+.largeScreenNav,
+.smallScreenNav {
+  position: absolute;
+}
+
+.largeScreenNav {
+  display: none;
+
+  @include breakpoint($md) {
+    display: block;
+  }
+}
+
+.smallScreenNav {
+  @include breakpoint($md) {
+    display: none;
+  }
+}

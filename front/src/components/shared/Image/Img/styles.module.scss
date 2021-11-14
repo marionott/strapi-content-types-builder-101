@@ -1,0 +1,28 @@
+@import 'config.scss';
+
+.Img {
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.top {
+  object-position: top;
+}
+
+.center {
+  object-position: center;
+}
+
+.left {
+  object-position: left;
+}
+
+.right {
+  object-position: right;
+}

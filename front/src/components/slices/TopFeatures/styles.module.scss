@@ -1,0 +1,45 @@
+@import 'config.scss';
+
+.TopFeatures {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 93px;
+
+    @include breakpoint($md) {
+      flex-direction: row;
+      margin-left: -60px;
+      margin-right: -60px;
+    }
+  }
+
+  .item {
+    padding: 35px 0;
+    border-bottom: 1px solid $mystic-gray;
+
+    &:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    @include breakpoint($md) {
+      border: none;
+      padding: 0 60px;
+      margin-bottom: 70px;
+      box-sizing: border-box;
+      width: 100 * 0.5 * 1%;
+    }
+  }
+}

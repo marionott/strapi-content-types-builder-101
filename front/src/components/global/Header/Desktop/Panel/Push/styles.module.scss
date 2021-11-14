@@ -1,0 +1,55 @@
+@import 'config.scss';
+
+.Push {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  max-width: 284px;
+  width: auto;
+  padding-bottom: 30px;
+  text-decoration: none;
+
+  & + .Push {
+    display: none;
+    margin-left: 20px;
+
+    @include breakpoint($xlg) {
+      display: flex;
+    }
+  }
+
+  .title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: $semi-bold;
+    text-decoration: none;
+    text-align: left;
+  }
+}
+
+.cover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: $semi-bold;
+  text-decoration: none;
+  text-align: left;
+}
+
+.link {
+  margin-top: auto;
+  text-decoration: none;
+}

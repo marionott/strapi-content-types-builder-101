@@ -1,0 +1,218 @@
+@import 'config.scss';
+
+//////////////////////////
+//     TYPOGRAPHY       //
+//////////////////////////
+
+.HeroTitle {
+  font-family: $poppins;
+  font-size: $title-extra-large-mb;
+  font-weight: $bold;
+  line-height: 64px;
+
+  @include breakpoint($md) {
+    font-size: $title-extra-large;
+  }
+}
+
+.Title {
+  font-family: $poppins;
+  font-size: $title-medium-mb;
+  font-weight: $bold;
+  line-height: 140%;
+
+  @include breakpoint($md) {
+    font-size: $title-medium;
+    line-height: 56px;
+  }
+
+  &.extra-large {
+    font-size: $title-extra-large-mb;
+
+    @include breakpoint($md) {
+      font-size: $title-extra-large;
+    }
+  }
+
+  &.large {
+    font-size: $title-large-mb;
+    line-height: 1.19;
+
+    @include breakpoint($md) {
+      font-size: $title-large;
+    }
+  }
+
+  &.small {
+    font-size: $title-small-mb;
+    font-weight: $semi-bold;
+    line-height: 30px;
+
+    @include breakpoint($md) {
+      font-size: $title-small;
+    }
+  }
+
+  &.smaller {
+    font-size: $title-smaller;
+    line-height: 1.5;
+  }
+}
+
+.Text {
+  font-family: $poppins;
+  font-size: $text-medium-mb;
+  font-weight: $normal;
+  line-height: 28px;
+
+  @include breakpoint($md) {
+    font-size: $text-medium;
+  }
+
+  &.big {
+    font-size: $text-large-mb;
+    line-height: 1.5;
+
+    @include breakpoint($md) {
+      font-size: $text-large;
+    }
+  }
+
+  &.medium {
+    font-size: $text-medium-mb;
+    line-height: 1.5;
+
+    @include breakpoint($md) {
+      font-size: $text-medium;
+    }
+  }
+
+  &.small {
+    font-size: $text-small-mb;
+    line-height: 22px;
+
+    @include breakpoint($md) {
+      font-size: $text-small;
+    }
+  }
+
+  &.smaller {
+    font-size: $text-smaller-mb;
+    line-height: 19px;
+
+    @include breakpoint($md) {
+      font-size: $text-smaller;
+    }
+  }
+
+  &.extra-small {
+    font-size: $text-extra-small;
+    line-height: 19px;
+  }
+
+  &.legend {
+    font-size: $text-legend;
+    line-height: 18px;
+  }
+}
+
+.Label {
+  font-family: $poppins;
+  font-size: $label-mb;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: $bold;
+
+  @include breakpoint($md) {
+    font-size: $label;
+  }
+
+  &.large {
+    font-size: $label-large;
+  }
+}
+
+.IntroText {
+  font-family: $poppins;
+  font-weight: $medium;
+  font-size: 15px;
+  line-height: 1.66;
+
+  @include breakpoint($md) {
+    font-size: 19px;
+  }
+}
+
+.HeaderLink {
+  font-family: $poppins;
+  font-weight: $medium;
+  font-size: 15px;
+  line-height: 22px;
+  color: $white;
+  text-decoration: none;
+}
+
+.TextWithLink {
+  font-family: $poppins;
+  font-weight: $bold;
+  font-size: 11px;
+  line-height: 1;
+  color: $bay-blue;
+  text-decoration: none;
+
+  .big {
+    font-size: 21px;
+  }
+
+  a {
+    color: $heliotrope-purple;
+  }
+
+  @include breakpoint($md) {
+    font-size: 12px;
+  }
+}
+
+.FooterLink {
+  font-family: $poppins;
+  font-weight: $normal;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.Button {
+  font-family: $poppins;
+  font-size: 15px;
+  font-weight: $medium;
+  line-height: 1;
+}
+
+.SmallButton {
+  composes: Button;
+  font-size: 13px;
+}
+
+.ContributorName {
+  font-family: $poppins;
+  font-size: 15px;
+  font-weight: $bold;
+  line-height: 1.2;
+
+  @include breakpoint($md) {
+    font-size: 17px;
+  }
+}
+
+.ChannelsTitle {
+  font-family: $poppins;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: $bold;
+  color: $jacksons-purple;
+
+  span {
+    color: $heliotrope-purple;
+  }
+}

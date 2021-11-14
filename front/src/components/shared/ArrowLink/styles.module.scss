@@ -1,0 +1,67 @@
+@import 'config.scss';
+
+.ArrowLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &.spread {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &.isActive,
+  &:hover {
+    .icon {
+      transform: translateX(5px) translateZ(0px);
+    }
+  }
+
+  &.spreadMobileCenter {
+    width: 100%;
+
+    .container {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint($md) {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &.reversed {
+    .container {
+      flex-direction: row-reverse;
+    }
+
+    .icon {
+      margin-right: 14px;
+      margin-left: 0;
+      transform: scaleX(-1);
+    }
+
+    &.isActive,
+    &:hover {
+      .icon {
+        transform: scaleX(-1) translateX(5px) translateZ(0px);
+      }
+    }
+  }
+}
+
+.icon {
+  margin-left: 14px;
+  transition: transform 0.4s $easeOutExpo;
+  will-change: transform;
+}
