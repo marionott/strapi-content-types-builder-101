@@ -2,10 +2,7 @@
   <h1 align="center">Strapi Content Types Builder 101</h1>
 </p>
 
-<p align="center">
-  <strong>A quick introduction to Strapi content type builder tool, using Next JS. Check out the video tutorial [here](https://www.youtube.com/watch?v=bStlyMB0NEw)</strong>
-  <br />
-</p>
+### A quick introduction to Strapi content type builder tool, using Next JS. Check out the video tutorial [here](https://www.youtube.com/watch?v=bStlyMB0NEw)
 
 ## Meta
 
