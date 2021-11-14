@@ -1,0 +1,64 @@
+@import 'config.scss';
+
+$width: 38px;
+$margin-left: 36px;
+
+.IconTitleText {
+  &.column {
+    .container {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .iconContainer {
+      margin-right: 0;
+    }
+
+    .textWrapper {
+      margin-left: 0;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    perspective: 1000px;
+  }
+
+  .title,
+  .iconContainer {
+    margin-bottom: 0;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .icon {
+    width: 100%;
+    height: auto;
+  }
+
+  .iconContainer {
+    margin-right: $margin-left;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: $width;
+    height: $width;
+    margin-bottom: 21px;
+    perspective: 1000px;
+  }
+
+  .iconWrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .textWrapper {
+    margin-left: $width + $margin-left;
+    margin-right: 0;
+  }
+}

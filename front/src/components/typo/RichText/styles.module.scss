@@ -1,0 +1,227 @@
+@import 'config.scss';
+
+.RichText {
+  font-family: $poppins;
+  word-break: break-word;
+  white-space: pre-line;
+
+  strong {
+    font-weight: $semi-bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $bay-of-many;
+    font-weight: $bold;
+    line-height: 1.25;
+    margin-bottom: 26px;
+
+    strong {
+      font-weight: $bold;
+    }
+
+    @include breakpoint($md) {
+      margin-bottom: 28px;
+    }
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  p,
+  li {
+    line-height: 1.6;
+  }
+
+  p,
+  ul,
+  ol {
+    margin-bottom: 25px;
+
+    @include breakpoint($md) {
+      margin-bottom: 31px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  h1 {
+    font-size: 33px;
+    @include breakpoint($md) {
+      font-size: 53px;
+    }
+  }
+
+  h2 {
+    font-size: 21px;
+    margin-top: 15px;
+
+    @include breakpoint($md) {
+      font-size: 33px;
+      margin-top: 70px;
+    }
+  }
+
+  h3 {
+    font-size: 17px;
+
+    @include breakpoint($md) {
+      font-size: 21px;
+    }
+  }
+
+  p {
+    font-size: 15px;
+
+    @include breakpoint($md) {
+      font-size: 19px;
+    }
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  a {
+    color: $royal-blue;
+    text-decoration: none;
+    transition: color 0.1s linear;
+
+    &:hover {
+      color: #4e26e0;
+    }
+  }
+
+  &.backgroundLinks {
+    a {
+      position: relative;
+      background-color: $blue-chalk;
+    }
+  }
+
+  &.greenLinks {
+    a {
+      color: $pastel-green;
+
+      &:hover {
+        color: $magic-mint-green;
+      }
+    }
+  }
+
+  &.blueLinks {
+    a {
+      color: $scooter-blue;
+
+      &:hover {
+        color: darken($scooter-blue, 15%);
+      }
+    }
+  }
+  &.yellowLinks {
+    a {
+      color: $golden-yellow;
+
+      &:hover {
+        color: $golden-orange;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ul {
+    list-style: disc inside;
+
+    // to fix https://github.com/rexxars/react-markdown/issues/367
+    p {
+      display: inline;
+    }
+  }
+
+  ol {
+    list-style: decimal inside;
+  }
+
+  code,
+  pre {
+    border-radius: 3px;
+    color: $white !important;
+    background-color: $bay-of-many !important;
+    font-size: 15px !important;
+  }
+
+  pre {
+    overflow: auto;
+    padding: 16px;
+    margin: 35px 0;
+
+    code {
+      background: none;
+    }
+  }
+
+  code {
+    font-family: monospace;
+    padding: 3px 6px;
+    margin: 0;
+    word-break: break-word;
+  }
+
+  blockquote {
+    padding: 20px;
+    background-color: $selago;
+    border: 1px solid $cornflower-blue;
+    margin-bottom: 35px;
+    border-radius: 4px;
+
+    @include breakpoint($md) {
+      padding: 32px 32px;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 13px;
+      @include breakpoint($md) {
+        line-height: inherit;
+        font-size: 17px;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  img[src*='#small'] {
+    display: block;
+    max-width: 250px;
+    margin: 0 auto 35px;
+    width: 80%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  .iframe {
+    margin-bottom: 35px;
+  }
+
+  .script {
+    height: 0;
+  }
+}

@@ -1,0 +1,57 @@
+@use 'sass:math';
+
+@import 'config.scss';
+
+.Hero {
+  position: relative;
+  margin-bottom: 83px;
+  transform: translateZ(0);
+  background-color: $jacksons-purple;
+
+  .heroWrapper {
+    padding: 170px 0;
+    position: relative;
+    width: math.div(1200, 1440) * 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    z-index: 1;
+    box-sizing: border-box;
+
+    h1 {
+      max-width: 740px;
+    }
+  }
+
+  .innerWrapper {
+    position: relative;
+    max-width: 980px;
+    width: 100 - math.div(1200 - 980, 1200) * 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text {
+    max-width: 400px;
+  }
+
+  .imageContainer {
+    z-index: 0;
+    position: relative;
+    margin-bottom: 0;
+
+    .imageWrapper {
+      z-index: 1;
+      position: relative;
+      width: 118%;
+      margin-top: 75px;
+      margin-left: -12%;
+      margin-bottom: -45%;
+      overflow: visible;
+    }
+
+    .image {
+      width: 100%;
+    }
+  }
+}

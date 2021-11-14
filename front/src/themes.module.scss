@@ -1,0 +1,31 @@
+@import 'config.scss';
+
+.Background {
+  &.gray {
+    background-color: $waikawa-gray;
+  }
+
+  &.bay-blue {
+    background-color: $bay-blue;
+  }
+
+  &.blue {
+    background-color: $scooter-blue;
+  }
+
+  &.orange {
+    background-color: $golden-orange;
+  }
+
+  &.green {
+    background-color: $pastel-green;
+  }
+
+  &.purple {
+    background-color: $heliotrope-purple;
+  }
+
+  &.lynch {
+    background-color: $waikawa-gray;
+  }
+}

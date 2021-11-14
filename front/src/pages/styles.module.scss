@@ -1,0 +1,16 @@
+@import 'config.scss';
+
+.App {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  padding: 140px 0 0;
+
+  @include breakpoint($md) {
+    padding: 170px 0 0;
+  }
+}

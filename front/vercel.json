@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": { "X-Robots-Tag": "noindex nofollow" }
+    }
+  ]
+}

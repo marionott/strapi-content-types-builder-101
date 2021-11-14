@@ -1,0 +1,183 @@
+@import 'config.scss';
+
+.buttonContainer {
+  display: inline-block;
+  .button {
+    background-color: transparent;
+  }
+
+  &.withFocus {
+    .background {
+      border: solid 1px $input-purple;
+    }
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+}
+.button {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  width: 100%;
+  transform: translateZ(900px);
+
+  @include breakpoint($sm) {
+    width: auto;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &.fullWidth {
+    display: block;
+  }
+}
+
+.hoverCircle {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.buttonLink {
+  color: inherit;
+  position: relative;
+  background-color: transparent;
+  composes: Button from '../../typo/typography.module.scss';
+  cursor: pointer;
+  display: inline-block;
+  padding: 18px 40px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateZ(1000px);
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.background,
+.shadow {
+  border-radius: 8px;
+}
+
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px 1px 4px rgba(26, 26, 67, 0.1);
+  border: solid 1px transparent;
+  transition: ease 0.2s border;
+  box-sizing: border-box;
+}
+
+.shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 4px rgba(26, 26, 67, 0.1);
+}
+
+.small {
+  composes: SmallButton from '../../typo/typography.module.scss';
+}
+
+.small-padding {
+  .buttonLink {
+    padding: 15px 14px;
+  }
+}
+
+// THEMES
+
+.purple {
+  background-color: $heliotrope-purple;
+  color: $white;
+}
+
+.yellow {
+  background-color: $golden-yellow;
+  color: $jacksons-purple;
+}
+
+.orange {
+  background-color: $golden-orange;
+  color: $white;
+}
+
+.white {
+  background-color: $white;
+  color: $bay-blue;
+}
+
+.white-green {
+  background-color: $white;
+  color: $salem;
+}
+
+.gray {
+  background-color: $white;
+  color: $waikawa-gray;
+}
+
+.green {
+  background-color: $pastel-green;
+  color: $white;
+}
+
+.blue {
+  background-color: $scooter-blue;
+  color: $white;
+}
+
+.lavender {
+  background-color: $heliotrope-purple;
+  color: $white;
+}
+
+.darkBlue {
+  background-color: $governor-bay;
+  color: $white;
+}
+
+.gradientPurple {
+  background-color: $purple-heart-light;
+  color: $white;
+}
+
+.gradientOrange {
+  background-color: $tuscany;
+  color: $white;
+}
+
+.gradientBlue {
+  background-color: $cobalt-dark;
+  color: $white;
+}
+
+.gradientGreen {
+  background-color: $salem;
+  color: $white;
+}

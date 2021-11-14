@@ -1,0 +1,43 @@
+@import 'config.scss';
+
+.SmallArrow {
+  width: 11px;
+  height: 12px;
+  transform-origin: center;
+}
+
+// LAYOUT VARIANTS
+
+.left {
+  transform: rotate(180deg);
+}
+
+.down {
+  transform: rotate(90deg);
+}
+
+// THEMES
+
+.gray path {
+  fill: $waikawa-gray;
+}
+
+.white path {
+  fill: $white;
+}
+
+.green path {
+  fill: $pastel-green;
+}
+
+.purple path {
+  fill: $heliotrope-purple;
+}
+
+.bay-blue path {
+  fill: $bay-blue;
+}
+
+.current-color path {
+  fill: currentColor;
+}

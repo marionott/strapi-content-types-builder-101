@@ -1,0 +1,77 @@
+@import 'config.scss';
+
+.NavigationLabel {
+  display: flex;
+  align-items: center;
+  height: 55px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0 5px;
+    text-decoration: none;
+    cursor: default;
+    height: 100%;
+  }
+
+  a.wrapper {
+    cursor: pointer;
+  }
+
+  .label {
+    position: relative;
+    transition: color 0.4s ease;
+
+    .labelText {
+      height: 50px;
+      font-weight: $medium;
+
+      transition: color 0.1s linear;
+
+      span {
+        vertical-align: middle;
+      }
+
+      .arrow {
+        margin-left: 6px;
+        border: solid currentColor;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(45deg);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .labelTextLine {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: $white;
+
+      &.dark {
+        background-color: $heliotrope-purple;
+      }
+    }
+
+    .labelTextLineContainer {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      overflow: hidden;
+      bottom: -5px;
+    }
+  }
+
+  @include breakpoint($md) {
+    padding: 0 16px;
+  }
+}
