@@ -4,7 +4,7 @@
 
 ### A quick introduction to Strapi content type builder tool, using Next JS. Check out the video tutorial [here](https://www.youtube.com/watch?v=bStlyMB0NEw)
 
-### Credits :mega::first_place_medal:
+### Credits :mega: :first_place_medal:
 This template was built by the very talented [Unlikely Technology](https://unlikely.technology/) team, including [Simon Corompt](https://github.com/orgs/unlikelystudio/people/simoncorompt), [Raoul Gaillard](https://github.com/raroul), [Bastien Paquier](https://github.com/orgs/unlikelystudio/people/bpaquier) and myself.
 
 ## Meta
