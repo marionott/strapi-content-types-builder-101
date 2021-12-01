@@ -1,14 +1,13 @@
-import SliceManager from 'components/shared/SliceManager'
-import React from 'react'
 import { fetchPage } from 'src/utils/api'
+import SliceManager from '~/components/shared/SliceManager'
 
-const Home = ({ pageData: { slices } }) => {
+const Home = ({ slices }) => {
   return <>{slices && <SliceManager slices={slices} />}</>
 }
 
 export async function getStaticProps() {
-  const extendedData = await fetchPage({ type: 'homepage' })
-  return { props: { pageData: extendedData } }
+  const pageData = await fetchPage({ type: 'homepage' })
+  return { props: pageData }
 }
 
 export default Home

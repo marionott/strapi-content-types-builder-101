@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-@import 'config.scss';
+@import 'styles/config.scss';
 
 .Hero {
   position: relative;
@@ -9,7 +9,7 @@
   background-color: $jacksons-purple;
 
   .heroWrapper {
-    padding: 170px 0;
+    padding: 170px 0 0;
     position: relative;
     width: math.div(1200, 1440) * 100%;
     margin-left: auto;
@@ -35,23 +35,7 @@
     max-width: 400px;
   }
 
-  .imageContainer {
-    z-index: 0;
-    position: relative;
-    margin-bottom: 0;
-
-    .imageWrapper {
-      z-index: 1;
-      position: relative;
-      width: 118%;
-      margin-top: 75px;
-      margin-left: -12%;
-      margin-bottom: -45%;
-      overflow: visible;
-    }
-
-    .image {
-      width: 100%;
-    }
+  .image {
+    width: 100%;
   }
 }

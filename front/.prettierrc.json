@@ -1,0 +1,16 @@
+{
+  "semi": false,
+  "useTabs": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "jsxBracketSameLine": true,
+  "trailingComma": "all",
+  "importOrder": [
+    "^~/components/(.*)$",
+    "^~/hooks/(.*)$",
+    "^~/utils/(.*)$",
+    "^~/styles/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true
+}
